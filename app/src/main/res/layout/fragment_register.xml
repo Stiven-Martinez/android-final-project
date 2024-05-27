@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".Login">
+    tools:context=".RegisterFragment">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:fontFamily="sans-serif"
+        android:text="@string/register"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -19,7 +20,7 @@
     <LinearLayout
         android:id="@+id/loginInputs"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/title"
         android:orientation="vertical">
 
@@ -44,22 +45,12 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/login_button" />
+            android:text="@string/register_button" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:linksClickable="true"
-        android:text="@string/register_redirect"
-        android:textSize="16sp" />
 
 </RelativeLayout>
