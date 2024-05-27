@@ -87,7 +87,7 @@
     </fragment>
     <fragment
         android:id="@+id/registro"
-        android:name="org.example.evaluacion.registro"
+        android:name="org.example.examen.Registro"
         android:label="fragment_registro"
         tools:layout="@layout/fragment_registro" >
         <action
