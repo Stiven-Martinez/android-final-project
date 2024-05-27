@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="user">Usuario</string>
-    <string name="password">Contraseña</string>
-    <string name="register_redirect"><u>Registrarse</u></string>
-    <string name="register">Registro</string>
-    <string name="register_button">Registrar</string>
-    <string name="login_button">Iniciar sesión</string>
-</resources>

@@ -1,4 +1,4 @@
-package org.example.evaluacion;
+package org.example.examen;
 
 import org.junit.Test;
 

@@ -3,63 +3,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#161616"
+    android:gravity="center"
     android:padding="16dp"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
-
-    <LinearLayout
-        android:id="@+id/loginInputs"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/title"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/inputUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints="name"
-            android:ems="10"
-            android:hint="@string/user"
-            android:inputType="text"
-            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/notflix" />
 
         <EditText
-            android:id="@+id/inputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="password"
-            android:ems="10"
-            android:hint="@string/password"
+            android:hint="Usuario"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/username_input" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
             android:inputType="textPassword"
-            android:textSize="20sp" />
+            android:id="@+id/password_input" />
 
         <Button
-            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/login_button" />
+            android:text="Iniciar sesión"
+            android:backgroundTint="@color/white"
+            android:textColor="#161616"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:textSize="25dp"
+            android:id="@+id/login_btn" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:backgroundTint="#303030"
+            android:textColor="@color/white"
+            android:padding="18dp"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:id="@+id/register_btn" />
 
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:linksClickable="true"
-        android:text="@string/register_redirect"
-        android:textSize="16sp" />
+    </LinearLayout>>
 
 </RelativeLayout>

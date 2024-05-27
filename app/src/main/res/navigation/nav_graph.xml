@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
- <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
@@ -7,73 +7,82 @@
 
     <fragment
         android:id="@+id/onboarding1Fragment"
-        android:name="org.example.evaluacion.Onboarding1Fragment"
+        android:name="org.example.examen.Onboarding1Fragment"
         android:label="fragment_onboarding1"
         tools:layout="@layout/fragment_onboarding1" >
         <action
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_onboarding1Fragment_to_onboarding2Fragment"
-            app:destination="@id/onboarding2Fragment" />
-        <action
+            app:destination="@id/onboarding2Fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
             android:id="@+id/action_onboarding1Fragment_to_login"
-            app:destination="@id/login" />
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/onboarding2Fragment"
-        android:name="org.example.evaluacion.Onboarding2Fragment"
+        android:name="org.example.examen.Onboarding2Fragment"
         android:label="fragment_onboarding2"
         tools:layout="@layout/fragment_onboarding2" >
         <action
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_onboarding2Fragment_to_onboarding3Fragment"
-            app:destination="@id/onboarding3Fragment" />
-        <action
+            app:destination="@id/onboarding3Fragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            android:id="@+id/action_onboarding2Fragment_to_login2"
-            app:destination="@id/login" />
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_onboarding2Fragment_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/onboarding3Fragment"
-        android:name="org.example.evaluacion.Onboarding3Fragment"
+        android:name="org.example.examen.Onboarding3Fragment"
         android:label="fragment_onboarding3"
         tools:layout="@layout/fragment_onboarding3" >
         <action
+            android:id="@+id/action_onboarding3Fragment_to_login"
+            app:destination="@id/login"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            android:id="@+id/action_onboarding3Fragment_to_login"
-            app:destination="@id/login" />
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/login"
-        android:name="org.example.evaluacion.Login"
+        android:name="org.example.examen.Login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_login_to_registerFragment"
-            app:destination="@id/registerFragment" />
+            android:id="@+id/action_login_to_menu"
+            app:destination="@id/menu" />
     </fragment>
     <fragment
-        android:id="@+id/registerFragment"
-        android:name="org.example.evaluacion.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
+        android:id="@+id/menu"
+        android:name="org.example.examen.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
         <action
-            android:id="@+id/action_registerFragment_to_login"
+            android:id="@+id/action_menu_to_principal"
+            app:destination="@id/principal" />
+    </fragment>
+    <fragment
+        android:id="@+id/principal"
+        android:name="org.example.examen.Principal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principal_to_login"
             app:destination="@id/login" />
     </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package org.example.evaluacion;
+package org.example.examen;
 
 import android.os.Bundle;
 
@@ -13,19 +13,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-
-public class Onboarding2Fragment extends Fragment {
+public class Onboarding1Fragment extends Fragment {
     Button botonSiguiente;
     Button botonSkip;
     NavController navController;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle
+            savedInstanceState) {
         return inflater.inflate(R.layout.fragment_onboarding1, container, false);
-    }
-
-    @Override
+    } @
+            Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
@@ -33,14 +30,13 @@ public class Onboarding2Fragment extends Fragment {
         botonSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_onboarding2Fragment_to_onboarding3Fragment);
-            }
-        });
+                navController.navigate(R.id.action_onboarding1Fragment_to_onboarding2Fragment);
+            }});
         botonSkip = view.findViewById(R.id.botonSkip);
         botonSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_onboarding2Fragment_to_login2);
+                navController.navigate(R.id.action_onboarding1Fragment_to_login);
             }
         });
     }

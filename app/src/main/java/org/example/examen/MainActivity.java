@@ -1,4 +1,4 @@
-package org.example.evaluacion;
+package org.example.examen;
 
 import androidx.appcompat.app.AppCompatActivity;
 

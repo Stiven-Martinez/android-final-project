@@ -1,11 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Evaluacion</string>
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="login" translatable="false">Login</string>
-    <string name="user">User</string>
-    <string name="password">Password</string>
-    <string name="register_redirect"><u>Create new account</u></string>
-    <string name="register">Register</string>
-    <string name="register_button">Create</string>
-    <string name="login_button">Log in</string>
+    <string name="app_name">Examen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
