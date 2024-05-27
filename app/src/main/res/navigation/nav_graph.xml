@@ -85,4 +85,24 @@
             android:id="@+id/action_principal_to_login"
             app:destination="@id/login" />
     </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="org.example.evaluacion.registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_registro_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 </navigation>
