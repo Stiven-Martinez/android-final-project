@@ -1,6 +1,5 @@
 package org.example.examen;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -32,16 +31,7 @@ public class Principal extends Fragment {
         navController = Navigation.findNavController(view);
         perfil = view.findViewById(R.id.botonPerfil);
         salir = view.findViewById(R.id.botonSalir);
-        perfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-                startActivity(intent);
-            }});
-        salir.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_principal_to_login);
-        }});
+        perfil.setOnClickListener(v -> navController.navigate(R.id.action_principal_to_perfil));
+        salir.setOnClickListener(v -> navController.navigate(R.id.action_principal_to_login));
     }
 }

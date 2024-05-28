@@ -84,6 +84,13 @@
         <action
             android:id="@+id/action_principal_to_login"
             app:destination="@id/login" />
+        <action
+            android:id="@+id/action_principal_to_perfil"
+            app:destination="@id/perfil"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/registro"
@@ -104,5 +111,18 @@
             app:exitAnim="@anim/slide_in_right"
             app:popEnterAnim="@anim/slide_out_left"
             app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfil"
+        android:name="org.example.examen.Perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfil_to_principal"
+            app:destination="@id/principal"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
 </navigation>

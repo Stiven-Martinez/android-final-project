@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_space"
+    android:backgroundTint="#C5C5C5"
+    android:backgroundTintMode="multiply"
+    tools:context=".Perfil">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/notflix" />
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Nombre usuario"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/fotoPerfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nombreUsuario"
+        android:layout_marginTop="16dp"
+        android:background="#ECECEC"
+        android:src="@drawable/user_24" />
+
+    <Button
+        android:id="@+id/botonPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fotoPerfil"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#ededed"
+        android:text="Cambiar foto de perfil"
+        android:textColor="#161616" />
+
+    <Button
+        android:id="@+id/botonPagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/botonPerfil"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#ededed"
+        android:text="Visitar página web"
+        android:textColor="#161616" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#ededed"
+        android:text="Regresar"
+        android:textColor="#161616" />
+
+</RelativeLayout>
