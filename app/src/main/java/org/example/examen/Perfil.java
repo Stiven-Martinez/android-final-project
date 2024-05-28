@@ -26,15 +26,15 @@ public class Perfil extends Fragment {
     TextView nombreUsuario;
 
     NavController navController;
-    private String sharedPrefFile = "com.example.examen";
+    private String sharedPrefFile = "org.example.examen";
     SharedPreferences sharedPref;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle
-            savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_principal, container, false);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_perfil, container, false);
     }
 
+    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
